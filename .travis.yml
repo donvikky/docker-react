@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true vokrobodo/docker-react npm run test
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "use-east-2"
   app: "docker-react"
